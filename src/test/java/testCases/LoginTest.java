@@ -23,7 +23,7 @@ public class LoginTest extends BasePage {
 	@Test
 	public void loginFailure() {
 		LoginPage login = new LoginPage(driver);
-		login.prpductPage("standarduser", "secretsauce");
+		login.productPage("standarduser", "secretsauce");
 
 		WebElement errorMessage = driver.findElement(By.xpath("//h3[@data-test='error']"));
 		System.out.println(errorMessage.getText());

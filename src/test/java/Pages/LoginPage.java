@@ -34,7 +34,7 @@ public class LoginPage {
 
 	}
 	
-	public void prpductPage(String userNameVal, String passwordVal) {
+	public void productPage(String userNameVal, String passwordVal) {
 		
 		userName.sendKeys("standarduser");
 
