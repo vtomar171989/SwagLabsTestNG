@@ -36,9 +36,9 @@ public class LoginPage {
 	
 	public void productPage(String userNameVal, String passwordVal) {
 		
-		userName.sendKeys("standarduser");
+		userName.sendKeys("user");
 
-		Password.sendKeys("secretsauce");
+		Password.sendKeys("secret");
 
 		LoginButton.click();
 
