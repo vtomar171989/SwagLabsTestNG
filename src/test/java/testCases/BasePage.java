@@ -24,8 +24,8 @@ public class BasePage {
 		
 		ChromeOptions options = new ChromeOptions();
 			options.addArguments("--no-sandbox"); 
-			options.addArguments("--disable-dev-shm-using") ;
-			options.addArguments("--window-size=1920,1080");
+			//options.addArguments("--disable-dev-shm-using") ;
+			//options.addArguments("--window-size=1920,1080");
 			//options.addArguments("--headless");
 			options.addArguments("--ignore-ssl-errors=yes");
 			options.addArguments("--ignore-certificate-errors");
