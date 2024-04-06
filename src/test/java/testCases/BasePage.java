@@ -18,50 +18,19 @@ public class BasePage {
 	@BeforeMethod
 	public void browserLaunch() throws MalformedURLException {
 
-
-		String DriverType = System.getProperty("Browser");
-		if (DriverType.contains("firefox")) {
-
-			driver = new FirefoxDriver();
-
-		} else if (DriverType.contains("remote")) {
-			
-
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--no-sandbox"); 
-			options.addArguments("--disable-dev-shm-using") ;
-			options.addArguments("--window-size=1920,1080");
-
-			options.addArguments("--headless") ;
-			driver = new RemoteWebDriver(new URL("http://54.167.125.14:4444"),options);
-		}
-		
-		else {
+	
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-using");
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--headless");
 			driver = new ChromeDriver(options);
-		}
+		
 		
 
 	driver.get("https://www.saucedemo.com/v1/");
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
-
-			options.addArguments("--headless");
-			options.addArguments("--ignore-ssl-errors=yes");
-			options.addArguments("--ignore-certificate-errors");
-			driver = new ChromeDriver(options);
-
-		driver.get("https://www.saucedemo.com/v1/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		
-		
-
 
 	}
 
