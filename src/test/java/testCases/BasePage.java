@@ -17,8 +17,7 @@ public class BasePage {
 	@BeforeMethod
 	public void browserLaunch() throws MalformedURLException {
 
-		driver = new ChromeDriver(options);		
-		ChromeOptions options = new ChromeOptions();
+			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--no-sandbox"); 
 			options.addArguments("--disable-dev-shm-using") ;
 			options.addArguments("--window-size=1920,1080");
