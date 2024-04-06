@@ -18,7 +18,7 @@ public class BasePage {
 	@BeforeMethod
 	public void browserLaunch() throws MalformedURLException {
 
-<<<<<<< HEAD
+
 		String DriverType = System.getProperty("Browser");
 		if (DriverType.contains("firefox")) {
 
@@ -26,14 +26,13 @@ public class BasePage {
 
 		} else if (DriverType.contains("remote")) {
 			
-=======
->>>>>>> f5c1c3fd69983f773ed9cd3b5eb71177fa8bbe22
+
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--no-sandbox"); 
 			options.addArguments("--disable-dev-shm-using") ;
 			options.addArguments("--window-size=1920,1080");
-<<<<<<< HEAD
-			options.addArguments("--headless") ;;
+
+			options.addArguments("--headless") ;
 			driver = new RemoteWebDriver(new URL("http://3.87.30.31:4444"),options);
 		}
 		
@@ -51,7 +50,7 @@ public class BasePage {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-=======
+
 			options.addArguments("--headless");
 			options.addArguments("--ignore-ssl-errors=yes");
 			options.addArguments("--ignore-certificate-errors");
@@ -62,7 +61,7 @@ public class BasePage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		
->>>>>>> f5c1c3fd69983f773ed9cd3b5eb71177fa8bbe22
+
 
 	}
 
