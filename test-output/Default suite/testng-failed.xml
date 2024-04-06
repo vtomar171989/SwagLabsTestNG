@@ -7,7 +7,6 @@
         <methods>
           <include name="productPage"/>
           <include name="tearDown"/>
-          <include name="loginFailure"/>
           <include name="browserLaunch"/>
         </methods>
       </class> <!-- testCases.LoginTest -->
