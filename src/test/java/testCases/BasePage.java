@@ -33,7 +33,7 @@ public class BasePage {
 			options.addArguments("--window-size=1920,1080");
 
 			options.addArguments("--headless") ;
-			driver = new RemoteWebDriver(new URL("http://3.87.30.31:4444"),options);
+			driver = new RemoteWebDriver(new URL("http://54.167.125.14:4444"),options);
 		}
 		
 		else {
