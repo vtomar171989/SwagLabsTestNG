@@ -13,7 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BasePage {
-	WebDriver driver;
+	RemoteWebDriver driver;
 
 	@BeforeMethod
 	public void browserLaunch() throws MalformedURLException {
