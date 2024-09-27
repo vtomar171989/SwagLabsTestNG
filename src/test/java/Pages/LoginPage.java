@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 // Comment just added
 	// Comment just added for pull
+	 // COmment third comment to take pull from master
 	WebDriver driver;
 
 	@FindBy(id = "user-name")
